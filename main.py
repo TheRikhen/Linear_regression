@@ -7,7 +7,7 @@ import numpy as np
 varieties = list()
 
 
-def fill_cluster(first, second, third):
+def fill_cluster(first, second):
     global varieties
     varieties.clear()
     with open('users_info.csv', 'r') as read_obj:
@@ -34,7 +34,7 @@ def get_linear_regression():
 
 
 def main():
-    fill_cluster('Photos', 'Age', '')
+    fill_cluster('Photos', 'Age')
     get_linear_regression()
 
 
