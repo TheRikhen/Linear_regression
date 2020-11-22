@@ -29,8 +29,6 @@ def get_linear_regression(varieties, args):
 
 
 def get_linear_3d_regression(new_data, args, third_arg):
-    fig = plt.figure()
-    ax = Axes3D(fig)
     df = pd.DataFrame(new_data, columns=args)
     third_arg_massive = pd.DataFrame(new_data, columns=[third_arg])
     third_value = third_arg_massive[third_arg].values.tolist()
