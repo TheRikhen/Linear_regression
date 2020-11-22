@@ -42,7 +42,7 @@ def get_linear_3d_regression(new_data, args, third_arg):
     only_x = pd.DataFrame({'Photos': x_surf.ravel(), 'Age': y_surf.ravel()})
     fitted_y = model.predict(only_x)
     fitted_y = np.array(fitted_y)
-    fig = plt.figure(figsize=(10, 10))
+    fig = plt.figure(figsize=(5, 5))
     ax = fig.add_subplot(111, projection='3d')
     ax.scatter(df['Photos'], df['Age'], df['Profile_entries'], c='red', marker='o', alpha=0.5)
     ax.plot_surface(x_surf, y_surf, fitted_y.reshape(x_surf.shape), color='b', alpha=0.3)
