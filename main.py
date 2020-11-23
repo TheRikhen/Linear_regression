@@ -1,10 +1,7 @@
 from sklearn.linear_model import LinearRegression
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
-from csv import DictReader
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
 
 
 def fill_cluster(args, third_arg):
